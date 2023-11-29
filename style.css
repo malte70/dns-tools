@@ -1,0 +1,116 @@
+@charset "UTF-8";
+/**
+ * Color scheme:
+ *     Walking away
+ *     <https://f.malte70.de/colors/>
+ */
+
+
+/* normalize.css */
+@import url('https://xyz.malte70.de/css/normalize.min.css');
+/* MegaFontsNOW WebFonts */
+@import url('https://xyz.malte70.de/fonts/megafontsnow/standard/megafontnow_standard.css');
+
+
+:root {
+	--font-size:         20px;
+	--font-family:       'Century Schoolbook Pro', serif;
+	--font-family-mono:  'Function Pro', monospace;
+	/*--font-family:       'Source Serif Pro', serif;
+	--font-family-mono:  "Hack", 'Source Code Pro', monospace;*/
+	
+	--color-background:  #F6F6F6;
+	--color-background2: #E8E8E8;
+	--color-foreground:  #333333;
+	--color-link:        #990100;
+	--color-link-active: #B90504;
+}
+
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+body {
+	/*font: 20px sans-serif;*/
+	font: var(--font-size) var(--font-family);
+	color: var(--color-foreground);
+	background: var(--color-background);
+}
+a:link, a:visited {
+	color: var(--color-link);
+}
+a:hover, a:active {
+	color: var(--color-link-active);
+}
+
+
+
+/******************************************
+ *                 Header                 *
+ ******************************************/
+header {
+	text-align: center;
+	margin: 0;
+	padding: 3em 6em;
+}
+header h1 {
+	margin: 0;
+}
+header h1 a:link, header h1 a:visited {
+	color: var(--color-foreground);
+	text-decoration: none;
+}
+header h1 a:hover, header h1 a:active {
+	color: var(--color-foreground);
+	text-decoration: underline;
+}
+
+
+/******************************************
+ *                  Main                  *
+ ******************************************/
+main {
+	padding: .5em;
+	width: 40em;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.input-group {
+	display: block;
+	margin: 0 0 .75em;
+}
+.input-group label {
+	display: inline-block;
+	width: 30%;
+}
+.input-group input,
+.input-group select {
+	display: inline-block;
+	width: 65%;
+}
+.input-group button {
+	display: inline-block;
+	text-align: right;
+}
+input {
+	background: var(--color-background2);
+}
+input, textarea {
+	font-family: var(--font-family-mono);
+}
+code, pre {
+	font-family: var(--font-family-mono);
+}
+
+
+/******************************************
+ *                 Footer                 *
+ ******************************************/
+footer {
+	text-align: center;
+}
+footer p {
+	margin: 0 0 1em;
+	padding: 0 .5em;
+}
+
